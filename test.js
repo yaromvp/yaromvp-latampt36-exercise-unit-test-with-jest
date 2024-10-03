@@ -12,7 +12,7 @@ test('adds 14 + 9 to equal 23', () => {
 
 test("One euro should be 1.07 dollars", function() {
     // Importo la funcion desde app.js
-    const { fromEuroToDollar } = require('./app.js');
+    //const { fromEuroToDollar } = require('./app.js');
 
     // Uso la función como debe ser usada
     const dollars = fromEuroToDollar(3.5);
@@ -26,7 +26,7 @@ test("One euro should be 1.07 dollars", function() {
 
 test("One dollar should be 146.26 yen", function() {
     // Importo la funcion desde app.js
-    const { fromDollarToYen } = require('./app.js');
+    //const { fromDollarToYen } = require('./app.js');
 
     const yen = (1 / 1.07) * 156.5;
     expect(fromDollarToYen(1)).toBeCloseTo(yen, 2);    
@@ -34,7 +34,7 @@ test("One dollar should be 146.26 yen", function() {
 
 test("1000 yen should be 5.56 pounds", function() {
     // Importo la funcion desde app.js
-    const { fromYenToPound } = require('./app.js');
+    //const { fromYenToPound } = require('./app.js');
 
     const pound = (1000 / 156.5) * 0.87;
         expect(fromYenToPound(1000)).toBeCloseTo(pound, 2);  

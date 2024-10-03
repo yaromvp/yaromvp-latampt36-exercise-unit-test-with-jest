@@ -10,13 +10,13 @@ const fromEuroToDollar = function(valueInEuro) {
 }
 
 const fromDollarToYen = function(valueInDollar) {
-    const euroAmount = valueInDollar / oneEuroIs.USD;
-    return euroAmount * oneEuroIs.JPY;
+    const valueInEuro = valueInDollar / oneEuroIs.USD;
+    return valueInEuro * oneEuroIs.JPY;
 }
 
 const fromYenToPound = function(valueInYen) {
-    const euroAmount = valueInYen / oneEuroIs.JPY;
-    return euroAmount * oneEuroIs.GBP;
+    const valueInEuro = valueInYen / oneEuroIs.JPY;
+    return valueInEuro * oneEuroIs.GBP;
 }
 
 // Esta es mi función que suma dos números
